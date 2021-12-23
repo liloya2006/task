@@ -14,7 +14,7 @@ import (
 // HomePageHandler return the home page
 func HomePageHandler(w http.ResponseWriter, r *http.Request) {
 	logRequest(r)
-	html, err := template.ParseFiles("templates/homePageHandler.html")
+	html, err := template.ParseFiles("templates/home_page.html")
 	if err != nil {
 		logrus.Warn(err)
 		w.WriteHeader(http.StatusInternalServerError)
